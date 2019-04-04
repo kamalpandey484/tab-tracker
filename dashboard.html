@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>REAP Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+
+  <div class="container-">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="http://reap.tothenew.com/assets/reap-ed280031215032f3350f114b95893a51.png">
+        <img class="w-50" src="http://reap.tothenew.com/assets/text_footer-8f0e1eb9c8ec931dcc66dbcdc631fe64.png">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item mr-2">
+            <button class="btn btn-nav" type="button">Back to Newers World</button>
+          </li>
+          <li class="nav-item mr-2">
+            <button class="btn" type="button" id="btn-nav-active"><img class="navBarButton"
+                 src="http://reap.tothenew.com/assets/ico-dashboard-5dff3444ebd21480dadfeeb0f0598268.png">Dashboard</button>
+          </li>
+          <li class="nav-item mr-2">
+            <button class="btn btn-nav" type="button"><img src="http://reap.tothenew.com/assets/ico-badge-f806ef61da2bf4d67425de6f36f427a9.png">Badges</button>
+          </li>
+          <li class="nav-item mr-2">
+            <button class="btn btn-nav" type="button">Certificates</button>
+          </li>
+        </ul>
+      </div>
+      <div>
+
+      </div>
+    </nav>
+
+    <section class="container-fluid col-lg-11 d-flex justify-content-center mt-5">
+      <div class="container col-lg-8">
+        <div class="card border border-primary">
+          <h5 class="card-header bg-primary text-white ">Recognize Newers</h5>
+          <div class="card-body">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">@</span>
+                </div>
+                <input type="text" class="form-control  mr-5" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                <div class="dropdown mr-4 ml-3">
+                  <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Select a Badge
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a href="#" class="dropdown-item"><img
+                            src="http://reap.tothenew.com/assets/ico-badge-orange-7487656ca410c0f2051788659278f212.png">Gold</a>
+                    <a href="#" class="dropdown-item"><img
+                            src="http://reap.tothenew.com/assets/ico-badge-grey-6e2741b0311f87111d40aac66392bf22.png">Silver</a>
+                    <a href="#" class="dropdown-item"><img
+                            src="http://reap.tothenew.com/assets/ico-badge-brown-6e5dc638c4ee9eef490cfcb0a5cce103.png">Bronze</a>
+
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    select a Karma Core Value
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a href="#" class="dropdown-item">Karma:Extra Miler</a>
+                    <a href="#" class="dropdown-item">Karma:Knowledge Sharing</a>
+                    <a href="#" class="dropdown-item">Something else here</a>
+                  </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Reason:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" style="resize: none"></textarea>
+            </div>
+              <a href="#" class="btn btn-primary float-right">Recognize</a>
+          </div>
+        </div>
+        <div class="card border border-primary mt-5">
+          <div class="card-header bg-primary text-white d-flex ">
+            <h5 class="mt-1">Wall of Frames</h5>
+            <input type="text" class="form-control ml-5 w-25 h-25" placeholder="Search..">
+          <button class="btn btn-success" type="submit">search
+          </button>
+          <i class="fa fa-calendar" aria-hidden="true"></i></div>
+          <div class="card-body">
+
+          </div>
+        </div>
+      </div>
+      <div class="container col-lg-4">
+        <div class="card border border-primary">
+          <h5 class="card-header bg-primary text-white ">Recognize Newers</h5>
+          <div class="card-body">
+
+          </div>
+      </div>
+      <div class="card border border-primary mt-5">
+        <h5 class="card-header bg-primary text-white ">NEWERS BOARD(LAST 7 DAYS)</h5>
+        <div class="card-body">
+
+        </div>
+    </div>
+    </section>
+  </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

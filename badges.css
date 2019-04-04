@@ -1,0 +1,15 @@
+#btn-nav-active{
+  background-color: pink;
+}
+
+#btn-nav-active:hover{
+  background-color: transparent;
+}
+
+
+.btn-nav {
+    background-color: transparent;
+}
+.btn-nav:hover, .btn-nav:focus, .btn-nav:active, .btn-nav.active, .open>.dropdown-toggle.btn-nav {
+    background-color: pink;
+}
